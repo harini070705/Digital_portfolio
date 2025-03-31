@@ -1,163 +1,267 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Portfolio - Harini K</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harini K - Data Analyst Portfolio</title>
     <style>
-        body {
-            font-family: Georgia, serif;
+        /* Reset and global styles */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #fa9cd9;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header section */
         header {
-            background-color: hsl(339, 100.00%, 54.90%);
+            background-color: #002b36;
             color: #fff;
             text-align: center;
-            padding: 2rem 0;
+            padding: 80px 20px;
             position: relative;
         }
-        .header-content h1 {
-            font-size: 2.5rem;
-        }
-        .profile-picture {
-            width: 100px;
-            height: 100px;
-            border-radius: 75%;
+
+        header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
             object-fit: cover;
+            border: 5px solid #fff;
             position: absolute;
-            top: 75px;
-            left: 75px;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
         }
+
+        .header-content h1 {
+            margin-top: 150px;
+            font-size: 2.8rem;
+            letter-spacing: 2px;
+        }
+
+        .header-content p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+
+        /* Navigation Bar */
         nav {
             background-color: #333;
             color: #fff;
             text-align: center;
+            padding: 12px 0;
         }
+
         nav ul {
-            list-style-type: none;
-            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
         }
+
         nav ul li {
-            display: inline;
-            margin: 0 20px;
+            display: inline-block;
         }
+
         nav ul li a {
-            text-decoration: none;
-            color: #fff;
+            font-size: 1.1rem;
+            color: #000000;
+            padding: 8px 20px;
+            transition: background-color 0.3s ease;
         }
-        .section-content {
+
+        nav ul li a:hover {
+            background-color: #ffffff;
+            border-radius: 5px;
+        }
+
+        /* Section styling */
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px;
             background-color: #fff;
-            padding: 2rem;
-            margin: 1rem;
-            border-radius: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: justify;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
         }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #002b36;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 8px;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        /* Skills section */
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        ul li {
+            padding: 10px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Download button */
         .download-button {
+            display: inline-block;
             background-color: #333;
             color: #fff;
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            border-radius: 20px;
-            display: inline-block;
-            margin-top: 10px;
-            align-self: center;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            text-align: center;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
         }
+
         .download-button:hover {
-            background-color: #555;
+            background-color: #fa9cd9;
         }
+
+        /* Footer */
         footer {
             text-align: center;
-            padding: 1rem 0;
             background-color: #333;
             color: #fff;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            header {
+                padding: 60px 20px;
+            }
+
+            .header-content h1 {
+                font-size: 2rem;
+            }
+
+            section {
+                margin: 20px;
+                padding: 20px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav ul li a {
+                font-size: 1rem;
+                padding: 10px;
+            }
         }
     </style>
 </head>
+
 <body>
+
+    <!-- Header Section -->
     <header>
+        <img src="Professional Photo.png" alt="Harini K" class="profile-picture">
         <div class="header-content">
-            <!-- Add your profile picture here -->
-            <img src="D:/COLLEGE/Picture1.png" alt="Your Profile Picture" class="profile-picture">
             <h1>Harini K</h1>
-            <p>Aspiring Data Analyst</p>
+            <p>Aspiring Data Analyst | Quick Learner | Problem Solver</p>
         </div>
     </header>
+
+    <!-- Navigation Bar -->
     <nav>
         <ul>
-            <li><a href="#objective">OBJECTIVE</a></li>
-            <li><a href="#education">EDUCATION</a></li>
-            <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#experience">EXPERIENCE</a></li>
-            <li><a href="#resume">RESUME</a></li>
+            <li><a href="#objective">Objective</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#resume">Resume</a></li>
         </ul>
     </nav>
+
+    <!-- Objective Section -->
     <section id="objective">
-        <div class="section-content">
-            <h2>OBJECTIVE</h2>
-            <p>
-                I am an aspiring Data Analyst with over a decade of experience in communication, team leadership, and decision-making. 
-                Currently pursuing higher education at Bharathiar University, I have gained practical exposure through internships at HRH Next Company and Cognifyz Technologies. I am a quick learner with a keen interest in transitioning into a dynamic development role.
-            </p>
-        </div>
+        <h2>Objective</h2>
+        <p>
+            I am an aspiring Data Analyst with over a decade of experience in communication, team leadership, and decision-making. 
+            Currently pursuing higher education at Bharathiar University, I have gained practical exposure through internships at HRH Next Company and Cognifyz Technologies. 
+            I am passionate about leveraging data to make informed decisions and solve real-world problems.
+        </p>
     </section>
+
+    <!-- Education Section -->
     <section id="education">
-        <div class="section-content">
-            <h2>EDUCATION</h2>
-            <p><strong>Bharathiar University</strong> (2023-2026)</p>
-            <p>B.Sc. Computer Technology, Sri Krishna Aditya College of Arts and Science, Coimbatore, Tamil Nadu</p>
-            <p><strong>Vasavi Vidyalaya Matriculation and Higher Secondary School</strong> (2009-2022)</p>
-        </div>
+        <h2>Education</h2>
+        <p><strong>Bharathiar University</strong> (2023-2026)</p>
+        <p>B.Sc. Computer Technology, Sri Krishna Aditya College of Arts and Science, Coimbatore, Tamil Nadu</p>
+        <p><strong>Vasavi Vidyalaya Matriculation and Higher Secondary School</strong> (2009-2022)</p>
     </section>
+
+    <!-- Skills Section -->
     <section id="skills">
-        <div class="section-content">
-            <h2>SKILLS</h2>
-            <ul>
-                <li>Time Management</li>
-                <li>Decision Making and Team Leadership</li>
-                <li>Scheduling</li>
-                <li>Quick Learner</li>
-            </ul>
-        </div>
+        <h2>Skills</h2>
+        <ul>
+            <li>Time Management</li>
+            <li>Decision Making and Team Leadership</li>
+            <li>Scheduling</li>
+            <li>Quick Learner</li>
+        </ul>
     </section>
+
+    <!-- Experience Section -->
     <section id="experience">
-        <div class="section-content">
-            <h2>EXPERIENCE</h2>
-            <p><strong>HRH Next Company</strong> (15-day Internship)</p>
-            <p><strong>Cognifyz Technologies</strong> (30-day Internship)</p>
-            <p>Participated in various college campaigns and events, demonstrating organizational and leadership skills. Assisted in coordinating academic activities, showcasing teamwork and communication abilities.</p>
-        </div>
+        <h2>Experience</h2>
+        <p><strong>HRH Next Company</strong> (15-day Internship)</p>
+        <p><strong>Cognifyz Technologies</strong> (30-day Internship)</p>
+        <p>Participated in various college campaigns and events, demonstrating organizational and leadership skills. Assisted in coordinating academic activities, showcasing teamwork and communication abilities.</p>
     </section>
+
+    <!-- Resume Section -->
     <section id="resume">
-        <div class="section-content">
-            <center>
-                <h2>Resume</h2>
-                <a href="https://drive.google.com/file/d/1EgDyPhSaDFZGkVwEjk1Slo8__dk1CDuH/view?usp=sharing" target="_blank" class="download-button">Download CV</a>
-            </center>
-        </div>
+        <h2>Resume</h2>
+        <center>
+            <a href="https://drive.google.com/file/d/1EgDyPhSaDFZGkVwEjk1Slo8__dk1CDuH/view?usp=sharing" target="_blank" class="download-button">Download CV</a>
+        </center>
     </section>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Harini K</p>
     </footer>
-    <script>
-        // Smooth scrolling to section when clicking on navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
+
 </body>
+
 </html>
